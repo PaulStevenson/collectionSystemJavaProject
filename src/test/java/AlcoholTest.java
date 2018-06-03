@@ -40,6 +40,7 @@ public class AlcoholTest {
         assertEquals(5532, alcoholBrand.getMarketValue());
     }
 
+//Is this how to use a setter?
     @Test
     public void setMarketValue() {
         AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, true, 6000);
@@ -70,7 +71,6 @@ public class AlcoholTest {
     @Test
     public void canCalculateTotalPurchaseCost(){
         assertEquals(5542, alcoholBrand.calculateTotalPurchaseCost());
-
     }
 
 

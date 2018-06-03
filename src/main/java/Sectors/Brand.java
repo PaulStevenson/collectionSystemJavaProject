@@ -44,4 +44,7 @@ public abstract class Brand  {
     public void setMarketValue(int newMarketValue) {
         this.marketValue = newMarketValue;
     }
+
+
+
 }
