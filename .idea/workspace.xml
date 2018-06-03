@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a6b18a5-36b7-4f2d-a3af-09e90c0745bc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" afterPath="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" afterPath="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AlcoholTest.java" afterPath="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="AlcoholTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AlcoholTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#308#309#0" expanded="true" />
@@ -76,7 +75,7 @@
                 <element signature="e#897#898#0" expanded="true" />
                 <element signature="e#962#963#0" expanded="true" />
                 <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,11 +84,11 @@
       <file leaf-file-name="AlcoholBrand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="300">
+              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -404,8 +403,8 @@
         <option value="$PROJECT_DIR$/src/test/java/BrandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sectors/Alcohol.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
       </list>
     </option>
   </component>
@@ -495,7 +494,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AlcoholTest.countBrandslist">
+  <component name="RunManager" selected="JUnit.AlcoholTest.canAddToSectorList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -516,15 +515,15 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="AlcoholTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlcoholTest.canAddToSectorList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CollectionsProject_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AlcoholTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="canAddToSectorList" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -556,14 +555,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="AlcoholTest.hasMarketValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlcoholTest.countSectorlist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CollectionsProject_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AlcoholTest" />
-      <option name="METHOD_NAME" value="hasMarketValue" />
+      <option name="METHOD_NAME" value="countSectorlist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -576,14 +575,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="AlcoholTest.isMarkedFavourite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlcoholTest.hasMarketValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CollectionsProject_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AlcoholTest" />
-      <option name="METHOD_NAME" value="isMarkedFavourite" />
+      <option name="METHOD_NAME" value="hasMarketValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -677,19 +676,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AlcoholTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AlcoholTest.isMarkedFavourite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AlcoholTest.hasMarketValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AlcoholTest.setMarketValue" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countBrandslist" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AlcoholTest.hasMarketValue" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AlcoholTest.setMarketValue" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countBrandslist" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countSectorlist" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AlcoholTest.canAddToSectorList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countBrandslist" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AlcoholTest.setMarketValue" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AlcoholTest.hasMarketValue" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AlcoholTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AlcoholTest.isMarkedFavourite" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AlcoholTest.canAddToSectorList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countSectorlist" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AlcoholTest.countBrandslist" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AlcoholTest.setMarketValue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AlcoholTest.hasMarketValue" />
       </list>
     </recent_temporary>
   </component>
@@ -710,17 +709,17 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AlcoholTest - 2018.06.03 at 12h 11m 19s.xml">
-      <configuration name="AlcoholTest" configurationId="JUnit" />
+    <history-entry file="AlcoholTest_canAddToSectorList - 2018.06.03 at 14h 12m 32s.xml">
+      <configuration name="AlcoholTest.canAddToSectorList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AlcoholTest_canAddToSectorList - 2018.06.03 at 14h 12m 41s.xml">
+      <configuration name="AlcoholTest.canAddToSectorList" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AlcoholTest_countBrandslist - 2018.06.03 at 14h 00m 54s.xml">
       <configuration name="AlcoholTest.countBrandslist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AlcoholTest_hasMarketValue - 2018.06.03 at 12h 12m 23s.xml">
-      <configuration name="AlcoholTest.hasMarketValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlcoholTest_isMarkedFavourite - 2018.06.03 at 12h 11m 13s.xml">
-      <configuration name="AlcoholTest.isMarkedFavourite" configurationId="JUnit" />
+    <history-entry file="AlcoholTest_countSectorlist - 2018.06.03 at 14h 05m 51s.xml">
+      <configuration name="AlcoholTest.countSectorlist" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AlcoholTest_setMarketValue - 2018.06.03 at 13h 29m 43s.xml">
       <configuration name="AlcoholTest.setMarketValue" configurationId="JUnit" />
@@ -820,19 +819,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="300">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AlcoholTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#308#309#0" expanded="true" />
@@ -848,7 +847,7 @@
             <element signature="e#897#898#0" expanded="true" />
             <element signature="e#962#963#0" expanded="true" />
             <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
           </folding>
         </state>
       </provider>

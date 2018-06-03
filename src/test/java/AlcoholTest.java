@@ -48,8 +48,16 @@ public class AlcoholTest {
     }
 
     @Test
-    public void countBrandslist(){
-        assertEquals(0, alcoholBrand.countBrandList());
+    public void countSectorlist(){
+        assertEquals(0, alcoholBrand.countSectorList());
+    }
+
+    @Test
+    public void canAddToSectorList(){
+        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, false, 15375);
+        alcoholBrand.addBrandToList(newBrand);
+        assertEquals(1, alcoholBrand.countSectorList());
+
     }
 
 }
