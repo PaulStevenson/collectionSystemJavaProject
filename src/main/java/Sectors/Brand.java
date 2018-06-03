@@ -1,10 +1,11 @@
 package Sectors;
 
-public abstract class Brand {
+
+public abstract class Brand  {
 
     private String name;
-    private int purchaseCost;
-    private int additionalCost;
+    protected int purchaseCost;
+    protected int additionalCost;
     private boolean favourite;
     private int marketValue;
 //    purchaseDate needs to be added

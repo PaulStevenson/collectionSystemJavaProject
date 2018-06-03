@@ -67,6 +67,14 @@ public class AlcoholTest {
         assertEquals(0, alcoholBrand.countSectorList());
     }
 
+    @Test
+    public void canCalculateTotalPurchaseCost(){
+        assertEquals(5542, alcoholBrand.calculateTotalPurchaseCost());
+
+    }
+
+
+
 }
 
 
