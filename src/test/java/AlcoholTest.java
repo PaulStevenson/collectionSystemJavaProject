@@ -11,35 +11,48 @@ public class AlcoholTest {
     AlcoholBrand alcoholBrand;
 
     @Before
-    public void before(){
+    public void before() {
         alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, true, 5532);
     }
 
     @Test
-    public void hasName(){
+    public void hasName() {
         assertEquals("Jack Daniel's", alcoholBrand.getName());
     }
 
     @Test
-    public void hasPurchaseCost(){
+    public void hasPurchaseCost() {
         assertEquals(5522, alcoholBrand.getPurchaseCost(), 0.01);
     }
 
     @Test
-    public void hasAdditionalCost(){
+    public void hasAdditionalCost() {
         assertEquals(20, alcoholBrand.getAdditionalCost(), 0.01);
     }
 
     @Test
-    public void isMarkedFavourite(){
+    public void isMarkedFavourite() {
         assertTrue(alcoholBrand.isMarkedFavourite());
     }
 
     @Test
-    public void hasMarketValue(){
+    public void hasMarketValue() {
         assertEquals(5532, alcoholBrand.getMarketValue());
     }
 
+    @Test
+    public void setMarketValue() {
+        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, true, 6000);
+        assertEquals(6000, alcoholBrand.getMarketValue());
 
+    }
+
+    @Test
+    public void countBrandslist(){
+        assertEquals(0, alcoholBrand.countBrandList());
+    }
 
 }
+
+
+
