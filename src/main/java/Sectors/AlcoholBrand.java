@@ -21,4 +21,8 @@ public class AlcoholBrand extends Brand{
         this.sectorlist.add(newBrand);
 
     }
+
+    public void removeBrandFromList(AlcoholBrand newBrand) {
+        this.sectorlist.remove(newBrand);
+    }
 }

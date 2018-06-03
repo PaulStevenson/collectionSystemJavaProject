@@ -57,7 +57,14 @@ public class AlcoholTest {
         AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, false, 15375);
         alcoholBrand.addBrandToList(newBrand);
         assertEquals(1, alcoholBrand.countSectorList());
+    }
 
+    @Test
+    public void canRemoveFromSectorList(){
+        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, false, 15375);
+        alcoholBrand.addBrandToList(newBrand);
+        alcoholBrand.removeBrandFromList(newBrand);
+        assertEquals(0, alcoholBrand.countSectorList());
     }
 
 }
