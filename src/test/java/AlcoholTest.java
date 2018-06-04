@@ -1,9 +1,9 @@
 import Sectors.AlcoholBrand;
+import Sectors.ApparelBrand;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class AlcoholTest {
@@ -12,7 +12,7 @@ public class AlcoholTest {
 
     @Before
     public void before() {
-        alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, true, 5532);
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04", true, 5532);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class AlcoholTest {
 
     @Test
     public void isMarkedFavourite() {
-        assertTrue(alcoholBrand.isMarkedFavourite());
+        assertEquals(true, alcoholBrand.isMarkedFavourite());
     }
 
     @Test
@@ -41,15 +41,14 @@ public class AlcoholTest {
     }
 
     @Test
-    public void canSetAsFavourite() {
-        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, false, 5532);
-        alcoholBrand.setAsFavourite(true);
-        assertEquals(true, alcoholBrand.isMarkedFavourite());
+    public void canSetFavouriteStatus() {
+        alcoholBrand.setFavouriteStatus(false);
+        assertEquals(false, alcoholBrand.isMarkedFavourite());
     }
 
     @Test
     public void setMarketValue() {
-        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, true, 5532);
+        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04",true, 5532);
         alcoholBrand.setMarketValue(6000);
         assertEquals(6000, alcoholBrand.getMarketValue());
     }
@@ -61,14 +60,14 @@ public class AlcoholTest {
 
     @Test
     public void canAddToSectorList(){
-        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, false, 15375);
+        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
         alcoholBrand.addBrandToList(newBrand);
         assertEquals(1, alcoholBrand.countSectorList());
     }
 
     @Test
     public void canRemoveFromSectorList(){
-        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, false, 15375);
+        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
         alcoholBrand.addBrandToList(newBrand);
         alcoholBrand.removeBrandFromList(newBrand);
         assertEquals(0, alcoholBrand.countSectorList());
@@ -78,6 +77,13 @@ public class AlcoholTest {
     public void canCalculateTotalPurchaseCost(){
         assertEquals(5542, alcoholBrand.calculateTotalPurchaseCost());
     }
+
+    @Test
+    public void setDate(){
+        alcoholBrand.setAcquisitionDate("2017/05/04");
+        assertEquals("2017/05/04", alcoholBrand.getAcquisitionDate());
+    }
+
 
 
 
