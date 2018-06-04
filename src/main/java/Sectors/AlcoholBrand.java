@@ -31,9 +31,8 @@ public class AlcoholBrand extends Brand {
         return this.purchaseCost + this.additionalCost;
     }
 
-    public int calculateSpendVsMarketValue() {
-        return calculateTotalPurchaseCost() - this.marketValue;
-    }
+
+
 
 
 }

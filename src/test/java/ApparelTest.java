@@ -94,7 +94,6 @@ public class ApparelTest {
 
 
 
-// Test in collection
 
 
 

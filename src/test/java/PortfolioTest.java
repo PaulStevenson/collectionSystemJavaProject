@@ -54,16 +54,7 @@ public class PortfolioTest {
 //    public void canCalculateTotalMarketValueOfBrands(){
 //        assertEquals(35863, portfolio.totalMarketValueOfBrands());
 //    }
-//
-//    @Test
-//    public void canCalculateSpendVsSellingPrice(){
-//        assertEquals(-2019, portfolio.calculateSpendVsMarketValue());
-//    }
 
-//    @Test
-//    public void totalMarketValueOfBrands(){
-//        assertEquals(24105, portfolio.totalMarketValueOfBrands());
-//    }
 
 
 }

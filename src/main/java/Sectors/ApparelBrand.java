@@ -31,19 +31,6 @@ public class ApparelBrand extends Brand implements ITrade {
         return this.purchaseCost + this.additionalCost;
     }
 
-    public int calculateSpendVsMarketValue() {
-        return calculateTotalPurchaseCost() - this.marketValue;
-    }
-
-//    @Override
-//    public int totalMarketValueOfBrands() {
-//        return marketValue;
-//    }
-//
-//    @Override
-//    public int calculateSpendVsMarketValue() {
-//        return calculateTotalPurchaseCost() - this.marketValue;
-//    }
 
 
 }

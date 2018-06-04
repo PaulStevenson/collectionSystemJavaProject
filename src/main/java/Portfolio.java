@@ -30,6 +30,14 @@ public class Portfolio {
         return total;
     }
 
+
+//CALCULATE TOTAL MARKET VALUE OF BRANDS, THEN DIFFERENCE BETWEEN SPEND AND VALUE!!!!!!!!!!!!!!
+
+//
+//    public int calculateSpendVsMarketValue() {
+//        return calculateTotalPurchaseCost() - this.marketValue;
+//    }
+
 //    public int totalMarketValueOfBrands() {
 //        int totalMarketValue = 0;
 //        for (ITrade marketValue : brandList) {
@@ -38,10 +46,6 @@ public class Portfolio {
 //        return totalMarketValue;
 //    }
 
-
-//    public int calculateSpendVsMarketValue() {
-//        return totalAmountSpentonBrands() - totalMarketValueOfBrands();
-//    }
 
 
 }

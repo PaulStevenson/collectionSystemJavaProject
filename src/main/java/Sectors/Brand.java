@@ -61,6 +61,10 @@ public abstract class Brand implements ITrade {
         this.acquisitionDate = acquisitionDate;
     }
 
+    public int calculateSpendVsMarketValue() {
+        return calculateTotalPurchaseCost() - this.marketValue;
+    }
+
 
 
 }
