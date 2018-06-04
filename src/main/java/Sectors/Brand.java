@@ -46,5 +46,7 @@ public abstract class Brand  {
     }
 
 
-
+    public void setAsFavourite(boolean favourite) {
+        this.favourite = true;
+    }
 }
