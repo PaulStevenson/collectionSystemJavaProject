@@ -31,4 +31,10 @@ public class AlcoholBrand extends Brand implements ISpent {
         return this.purchaseCost + this.additionalCost;
     }
 
+    @Override
+    public int calculateSpendVsMarketValue() {
+        return calculateTotalPurchaseCost() - this.marketValue;
+    }
+
+
 }

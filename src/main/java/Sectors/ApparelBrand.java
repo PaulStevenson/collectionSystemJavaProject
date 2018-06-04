@@ -19,7 +19,7 @@ public class ApparelBrand extends Brand implements ISpent {
 
     public void addBrandToApparelList(ApparelBrand newBrand) {
         this.ApparelList.add(newBrand);
-        System.out.println(ApparelList.toString());
+//        System.out.println(ApparelList.toString());
     }
 
     public void removeBrandFromApparelList(ApparelBrand newBrand) {
@@ -30,5 +30,11 @@ public class ApparelBrand extends Brand implements ISpent {
     public int calculateTotalPurchaseCost() {
         return this.purchaseCost + this.additionalCost;
     }
+
+    @Override
+    public int calculateSpendVsMarketValue() {
+        return calculateTotalPurchaseCost() - this.marketValue;
+    }
+
 
 }

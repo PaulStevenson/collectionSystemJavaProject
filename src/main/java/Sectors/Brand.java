@@ -12,7 +12,7 @@ public abstract class Brand implements ISpent {
     protected int additionalCost;
     private String acquisitionDate;
     private boolean favourite;
-    private int marketValue;
+    protected int marketValue;
     
 
 
@@ -62,4 +62,7 @@ public abstract class Brand implements ISpent {
     public void setAcquisitionDate(String acquisitionDate) {
         this.acquisitionDate = acquisitionDate;
     }
+
+
+
 }

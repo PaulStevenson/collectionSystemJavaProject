@@ -84,6 +84,11 @@ public class AlcoholTest {
         assertEquals("2017/05/04", alcoholBrand.getAcquisitionDate());
     }
 
+    @Test
+    public void canCalculateSpendVsSellingPrice(){
+        assertEquals(10, alcoholBrand.calculateSpendVsMarketValue());
+    }
+
 
 
 
