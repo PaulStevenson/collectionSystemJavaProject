@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6b18a5-36b7-4f2d-a3af-09e90c0745bc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Interfaces/ISpent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Portfolio.class" afterPath="$PROJECT_DIR$/out/production/classes/Portfolio.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Sectors/AlcoholBrand.class" afterPath="$PROJECT_DIR$/out/production/classes/Sectors/AlcoholBrand.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Sectors/ApparelBrand.class" afterPath="$PROJECT_DIR$/out/production/classes/Sectors/ApparelBrand.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Sectors/Brand.class" afterPath="$PROJECT_DIR$/out/production/classes/Sectors/Brand.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ApparelTest.class" afterPath="$PROJECT_DIR$/out/test/classes/ApparelTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/PortfolioTest.class" afterPath="$PROJECT_DIR$/out/test/classes/PortfolioTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/ITrade.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Portfolio.java" afterPath="$PROJECT_DIR$/src/main/java/Portfolio.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" afterPath="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java" afterPath="$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" afterPath="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AlcoholTest.java" afterPath="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApparelTest.java" afterPath="$PROJECT_DIR$/src/test/java/ApparelTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PortfolioTest.java" afterPath="$PROJECT_DIR$/src/test/java/PortfolioTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,41 +35,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Portfolio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Portfolio.java">
+      <file leaf-file-name="PortfolioTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PortfolioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="245">
+              <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApparelBrand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +52,8 @@
       <file leaf-file-name="AlcoholTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AlcoholTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1047">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="355">
+              <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#293#294#0" expanded="true" />
@@ -96,114 +79,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PortfolioTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Label.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Enums/Label.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Brand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/Brand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1289#1290#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApparelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ApparelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="68" column="95" lean-forward="false" selection-start-line="68" selection-start-column="95" selection-end-line="68" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-                <element signature="e#2095#2096#0" expanded="true" />
-                <element signature="e#2173#2174#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AlcoholBrand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="295">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISpent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java">
+      <file leaf-file-name="ApparelBrand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="350">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApparelTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ApparelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
+                <element signature="e#2294#2295#0" expanded="true" />
+                <element signature="e#2526#2527#0" expanded="true" />
+                <element signature="e#2604#2605#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -531,13 +470,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Sectors/Alcohol.java" />
         <option value="$PROJECT_DIR$/src/main/java/Enums/Label.java" />
         <option value="$PROJECT_DIR$/src/test/java/AlcohollTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ApparelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Interfaces/ITrade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" />
         <option value="$PROJECT_DIR$/src/main/java/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/test/java/PortfolioTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sectors/Brand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AlcoholTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ApparelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java" />
       </list>
     </option>
@@ -683,6 +623,26 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="ApparelTest.canCalculateSpendVsSellingPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CollectionsProject_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ApparelTest" />
+      <option name="METHOD_NAME" value="canCalculateSpendVsSellingPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="ApparelTest.canRemoveFromSectorList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CollectionsProject_test" />
@@ -703,14 +663,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ApparelTest.canSetAsFavourite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApparelTest.totalMarketValueOfBrands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="CollectionsProject_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApparelTest" />
-      <option name="METHOD_NAME" value="canSetAsFavourite" />
+      <option name="METHOD_NAME" value="totalMarketValueOfBrands" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -731,26 +691,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PortfolioTest" />
       <option name="METHOD_NAME" value="canCalculateTotalSpendOnBrands" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="PortfolioTest.canRemoveFromBrandList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CollectionsProject_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PortfolioTest" />
-      <option name="METHOD_NAME" value="canRemoveFromBrandList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -825,18 +765,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in CollectionsProject_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ApparelTest.canSetAsFavourite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canRemoveFromBrandList" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ApparelTest.canRemoveFromSectorList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canCalculateTotalSpendOnBrands" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ApparelTest.canRemoveFromSectorList" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canCalculateTotalSpendOnBrands" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ApparelTest.canCalculateSpendVsSellingPrice" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ApparelTest.totalMarketValueOfBrands" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in CollectionsProject_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canCalculateTotalSpendOnBrands" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ApparelTest.canRemoveFromSectorList" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canRemoveFromBrandList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ApparelTest.canSetAsFavourite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ApparelTest.canCalculateSpendVsSellingPrice" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ApparelTest.totalMarketValueOfBrands" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PortfolioTest.canCalculateTotalSpendOnBrands" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ApparelTest.canRemoveFromSectorList" />
       </list>
     </recent_temporary>
   </component>
@@ -857,40 +797,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 13h 56m 44s.xml">
-      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 13h 58m 38s.xml">
-      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 14h 01m 50s.xml">
-      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 14h 10m 51s.xml">
-      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 15h 30m 36s.xml">
       <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 15h 32m 09s.xml">
       <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortfolioTest_canCalculateTotalSpendOnBrands - 2018.06.04 at 14h 09m 37s.xml">
-      <configuration name="PortfolioTest.canCalculateTotalSpendOnBrands" configurationId="JUnit" />
+    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 15h 50m 12s.xml">
+      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortfolioTest_canCalculateTotalSpendOnBrands - 2018.06.04 at 14h 10m 45s.xml">
-      <configuration name="PortfolioTest.canCalculateTotalSpendOnBrands" configurationId="JUnit" />
+    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 16h 23m 28s.xml">
+      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortfolioTest_canRemoveFromBrandList - 2018.06.04 at 13h 45m 56s.xml">
-      <configuration name="PortfolioTest.canRemoveFromBrandList" configurationId="JUnit" />
+    <history-entry file="All_in_CollectionsProject_test - 2018.06.04 at 16h 37m 45s.xml">
+      <configuration name="All in CollectionsProject_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PortfolioTest_canRemoveFromBrandList - 2018.06.04 at 13h 46m 16s.xml">
-      <configuration name="PortfolioTest.canRemoveFromBrandList" configurationId="JUnit" />
+    <history-entry file="ApparelTest_canCalculateSpendVsSellingPrice - 2018.06.04 at 15h 49m 51s.xml">
+      <configuration name="ApparelTest.canCalculateSpendVsSellingPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApparelTest_canCalculateSpendVsSellingPrice - 2018.06.04 at 15h 49m 59s.xml">
+      <configuration name="ApparelTest.canCalculateSpendVsSellingPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApparelTest_canCalculateSpendVsSellingPrice - 2018.06.04 at 16h 37m 40s.xml">
+      <configuration name="ApparelTest.canCalculateSpendVsSellingPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApparelTest_totalMarketValueOfBrands - 2018.06.04 at 16h 14m 53s.xml">
+      <configuration name="ApparelTest.totalMarketValueOfBrands" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApparelTest_totalMarketValueOfBrands - 2018.06.04 at 16h 16m 59s.xml">
+      <configuration name="ApparelTest.totalMarketValueOfBrands" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -898,7 +837,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -955,28 +894,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interfaces/ITrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1528125715531" expanded="true" signature="94:128" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="490">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PortfolioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#627#628#0" expanded="true" />
@@ -985,72 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApparelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="68" column="95" lean-forward="false" selection-start-line="68" selection-start-column="95" selection-end-line="68" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#2095#2096#0" expanded="true" />
-            <element signature="e#2173#2174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interfaces/ISpent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AlcoholTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1047">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="355">
+          <caret line="94" column="1" lean-forward="true" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#293#294#0" expanded="true" />
@@ -1077,26 +991,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/AlcoholBrand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="295">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sectors/ApparelBrand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="350">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#501#502#0" expanded="true" />
@@ -1105,8 +1019,34 @@
             <element signature="e#829#830#0" expanded="true" />
             <element signature="e#890#891#0" expanded="true" />
             <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApparelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2294#2295#0" expanded="true" />
+            <element signature="e#2526#2527#0" expanded="true" />
+            <element signature="e#2604#2605#0" expanded="true" />
           </folding>
         </state>
       </provider>

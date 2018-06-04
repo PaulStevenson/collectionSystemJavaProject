@@ -1,11 +1,9 @@
 package Sectors;
 
 
-import Interfaces.ISpent;
+import Interfaces.ITrade;
 
-import java.util.Date;
-
-public abstract class Brand implements ISpent {
+public abstract class Brand implements ITrade {
 
     private String name;
     protected int purchaseCost;

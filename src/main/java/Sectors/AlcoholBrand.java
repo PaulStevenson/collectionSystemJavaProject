@@ -1,10 +1,10 @@
 package Sectors;
 
-import Interfaces.ISpent;
+import Interfaces.ITrade;
 
 import java.util.ArrayList;
 
-public class AlcoholBrand extends Brand implements ISpent {
+public class AlcoholBrand extends Brand {
 
     private ArrayList<AlcoholBrand> sectorlist;
 
@@ -31,7 +31,6 @@ public class AlcoholBrand extends Brand implements ISpent {
         return this.purchaseCost + this.additionalCost;
     }
 
-    @Override
     public int calculateSpendVsMarketValue() {
         return calculateTotalPurchaseCost() - this.marketValue;
     }

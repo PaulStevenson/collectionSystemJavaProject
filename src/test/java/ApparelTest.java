@@ -8,11 +8,15 @@ import static org.junit.Assert.assertTrue;
 public class ApparelTest {
 
     ApparelBrand apparelBrand;
+    ApparelBrand apparelBrand2;
 
     @Before
     public void before() {
         apparelBrand = new ApparelBrand("H&M", 22536, 25, "2018/06/04", false, 20488);
+
+        apparelBrand2 = new ApparelBrand("Paul", 22536, 25, "2018/06/04", false, 200);
     }
+
 
     @Test
     public void hasName() {
@@ -83,6 +87,14 @@ public class ApparelTest {
         assertEquals("2017/05/04", apparelBrand.getAcquisitionDate());
     }
 
+    @Test
+    public void canCalculateSpendVsSellingPrice(){
+        assertEquals(2073, apparelBrand.calculateSpendVsMarketValue());
+    }
+
+
+
+// Test in collection
 
 
 

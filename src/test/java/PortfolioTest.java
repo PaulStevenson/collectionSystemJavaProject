@@ -1,4 +1,4 @@
-import Interfaces.ISpent;
+import Interfaces.ITrade;
 import Sectors.AlcoholBrand;
 import Sectors.ApparelBrand;
 import Sectors.Brand;
@@ -10,8 +10,8 @@ import static org.junit.Assert.assertEquals;
 public class PortfolioTest {
 
     Portfolio portfolio;
-    ISpent alcoholBrand;
-    ISpent apparelBrand;
+    ITrade alcoholBrand;
+    ITrade apparelBrand;
 
     @Before
     public void before(){
@@ -28,7 +28,7 @@ public class PortfolioTest {
 
     @Test
     public void canAddToBrandList(){
-        ISpent alcoholBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+        ITrade alcoholBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
         portfolio.addBrandToList(alcoholBrand);
         assertEquals(1, portfolio.countBrandList());
     }
@@ -48,7 +48,22 @@ public class PortfolioTest {
         portfolio.addBrandToList(apparelBrand);
         portfolio.addBrandToList(alcoholBrand);
         assertEquals(22086, portfolio.totalAmountSpentonBrands());
-
     }
+
+//    @Test
+//    public void canCalculateTotalMarketValueOfBrands(){
+//        assertEquals(35863, portfolio.totalMarketValueOfBrands());
+//    }
+//
+//    @Test
+//    public void canCalculateSpendVsSellingPrice(){
+//        assertEquals(-2019, portfolio.calculateSpendVsMarketValue());
+//    }
+
+//    @Test
+//    public void totalMarketValueOfBrands(){
+//        assertEquals(24105, portfolio.totalMarketValueOfBrands());
+//    }
+
 
 }
