@@ -28,8 +28,8 @@ public class PortfolioTest {
 
     @Test
     public void canAddToBrandList(){
-        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
-        portfolio.addBrandToList(newBrand);
+        ISpent alcoholBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+        portfolio.addBrandToList(alcoholBrand);
         assertEquals(1, portfolio.countBrandList());
     }
 
@@ -45,6 +45,9 @@ public class PortfolioTest {
 
     @Test
     public void canCalculateTotalSpendOnBrands(){
+        portfolio.addBrandToList(apparelBrand);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(22086, portfolio.totalAmountSpentonBrands());
 
     }
 

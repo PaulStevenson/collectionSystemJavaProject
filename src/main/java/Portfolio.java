@@ -1,6 +1,4 @@
 import Interfaces.ISpent;
-import Sectors.AlcoholBrand;
-import Sectors.ApparelBrand;
 import Sectors.Brand;
 
 import java.util.ArrayList;
@@ -17,14 +15,21 @@ public class Portfolio {
         return this.brandList.size();
     }
 
-    public void addBrandToList(Brand newBrand) {
+    public void addBrandToList(ISpent newBrand) {
         this.brandList.add(newBrand);
     }
 
-    public void removeBrandFrombrandList(Brand newBrand) {
+    public void removeBrandFrombrandList(ISpent newBrand) {
         this.brandList.remove(newBrand);
     }
 
+    public int totalAmountSpentonBrands() {
+        int total = 0;
+        for (ISpent newBrand : brandList) {
+            total += newBrand.calculateTotalPurchaseCost();
+        }
+        return total;
+    }
 
 
 //Caluclate total spent on al objects - for loop in brandList
