@@ -1,6 +1,8 @@
 import Interfaces.ITrade;
 import Sectors.AlcoholBrand;
+import Sectors.ApparelBrand;
 import Sectors.Brand;
+import javafx.util.converter.PercentageStringConverter;
 
 import java.util.ArrayList;
 
@@ -8,10 +10,12 @@ public class Portfolio {
 
     private ArrayList<ITrade> portfolioList;
     private ArrayList<AlcoholBrand> alcoholBrandList;
+    private ArrayList<ApparelBrand> apparelBrandList;
 
     public Portfolio() {
         this.portfolioList = new ArrayList<ITrade>();
         this.alcoholBrandList = new ArrayList<AlcoholBrand>();
+        this.apparelBrandList = new ArrayList<ApparelBrand>();
     }
 
     public int countBrandList() {
@@ -22,6 +26,12 @@ public class Portfolio {
         return this.alcoholBrandList.size();
     }
 
+    public int countApparelBrandList() {
+        return this.apparelBrandList.size();
+    }
+
+
+
     public void addBrandToList(ITrade newBrand) {
         this.portfolioList.add(newBrand);
     }
@@ -30,12 +40,22 @@ public class Portfolio {
         this.alcoholBrandList.add(newBrand);
     }
 
+    public void addApparelBrandToList(ApparelBrand newBrand) {
+        this.apparelBrandList.add(newBrand);
+    }
+
+
+
     public void removeBrandFrombrandList(Brand newAlcohol) {
         this.portfolioList.remove(newAlcohol);
     }
 
     public void removeBrandFromAlcoholBrandList(AlcoholBrand newBrand) {
         this.alcoholBrandList.remove(newBrand);
+    }
+
+    public void removeBrandFromApparelBrandList(ApparelBrand newBrand) {
+        this.apparelBrandList.remove(newBrand);
     }
 
     public int totalAmountSpentonBrands() {
@@ -53,30 +73,22 @@ public class Portfolio {
         }
         return totalMarketValue;
     }
+
+    public int differenceBetweenValueAndSpend() {
+        return totalMarketValueOfBrands() - totalAmountSpentonBrands();
+    }
+
+    public int TotalSpendPlusTotalMarketValue(){
+        return totalMarketValueOfBrands() + totalAmountSpentonBrands();
+    }
+
+    public double differenceAsPercentage(){
+        return differenceBetweenValueAndSpend() / TotalSpendPlusTotalMarketValue() * 100;
+
+    }
+
+//    A/B * 100 = %
+
 }
 
-
-
-
-//CALCULATE TOTAL MARKET VALUE OF BRANDS, THEN DIFFERENCE BETWEEN SPEND AND VALUE!!!!!!!!!!!!!!
-
-//
-//
-
-
-//    }
-
-//    public int calculateSpendVsMarketValue() {
-//        return calculateTotalPurchaseCost() - this.marketValue;
-//    }
-
-
-
-
-
-
-
-//Caluclate total spent on al objects - for loop in brandList
-// Count number items from a subclass   Loop through arraylist
-//    For loop pull out brand from a sector
 

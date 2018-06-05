@@ -2,6 +2,7 @@ import Interfaces.ITrade;
 import Sectors.AlcoholBrand;
 import Sectors.ApparelBrand;
 import Sectors.Brand;
+import jdk.management.resource.internal.ApproverGroup;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,17 +11,14 @@ import static org.junit.Assert.assertEquals;
 public class PortfolioTest {
 
     Portfolio portfolio;
-    Portfolio alcoholBrandList;
-    ITrade alcoholBrand;
-    ITrade apparelBrand;
+    AlcoholBrand alcoholBrand;
+    ApparelBrand apparelBrand;
 
     @Before
     public void before(){
         portfolio = new Portfolio();
-        alcoholBrandList = new Portfolio();
         alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04", true, 5532);
-        apparelBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573); {
-        }
+        apparelBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573);
     }
 
     @Test
@@ -30,7 +28,12 @@ public class PortfolioTest {
 
     @Test
     public void canCountAlcoholBrandList(){
-        assertEquals(0, alcoholBrandList.countAlcoholBrandList());
+        assertEquals(0, portfolio.countAlcoholBrandList());
+    }
+
+    @Test
+    public void canCountApparelBrandList(){
+        assertEquals(0, portfolio.countApparelBrandList());
     }
 
     @Test
@@ -43,8 +46,15 @@ public class PortfolioTest {
     @Test
     public void canAddToAlcoholBrandList(){
         AlcoholBrand alcoholBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
-        alcoholBrandList.addAlcoholBrandToList(alcoholBrand);
-        assertEquals(1, alcoholBrandList.countAlcoholBrandList());
+        portfolio.addAlcoholBrandToList(alcoholBrand);
+        assertEquals(1, portfolio.countAlcoholBrandList());
+    }
+
+    @Test
+    public void canAddToApparelBrandList(){
+        ApparelBrand apparelBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573);
+        portfolio.addApparelBrandToList(apparelBrand);
+        assertEquals(1, portfolio.countApparelBrandList());
     }
 
     @Test
@@ -59,10 +69,18 @@ public class PortfolioTest {
 
     @Test
     public void canRemoveFromAlcoholBrandList(){
-        Brand newAlcohol = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+        AlcoholBrand newAlcohol = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
         portfolio.addBrandToList(newAlcohol);
-        portfolio.removeBrandFromAlcoholBrandList((AlcoholBrand) newAlcohol);
-        assertEquals(0, alcoholBrandList.countAlcoholBrandList());
+        portfolio.removeBrandFromAlcoholBrandList(newAlcohol);
+        assertEquals(0, portfolio.countAlcoholBrandList());
+    }
+
+    @Test
+    public void canRemoveFromApprelBrandList(){
+       ApparelBrand apparelBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573);
+        portfolio.addApparelBrandToList(apparelBrand);
+        portfolio.removeBrandFromApparelBrandList(apparelBrand);
+        assertEquals(0, portfolio.countApparelBrandList());
     }
 
     @Test
@@ -79,6 +97,25 @@ public class PortfolioTest {
         assertEquals(24105, portfolio.totalMarketValueOfBrands());
     }
 
+    @Test
+    public void canGetDifferenceBetweenMarketValueAndTotalSpend(){
+        portfolio.addBrandToList(apparelBrand);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(2019, portfolio.differenceBetweenValueAndSpend());
+    }
+
+    @Test
+    public void canAddTotalSpendWithTotalMarketValue(){
+        portfolio.addBrandToList(apparelBrand);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(46191, portfolio.TotalSpendPlusTotalMarketValue());
+    }
+
+//    @Test
+//    public void calculateDifferenceAsPercentage(){
+//        portfolio.addBrandToList(apparelBrand);
+//        portfolio.addBrandToList(alcoholBrand);
+//    }
 
 
 }

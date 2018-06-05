@@ -2,8 +2,6 @@ package Sectors;
 
 import Interfaces.ITrade;
 
-import java.util.ArrayList;
-
 public class ApparelBrand extends Brand implements ITrade {
 
 
