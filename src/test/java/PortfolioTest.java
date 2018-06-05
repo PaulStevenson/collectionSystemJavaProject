@@ -72,10 +72,12 @@ public class PortfolioTest {
         assertEquals(22086, portfolio.totalAmountSpentonBrands());
     }
 
-//    @Test
-//    public void canCalculateTotalMarketValueOfBrands(){
-//        assertEquals(35863, portfolio.totalMarketValueOfBrands());
-//    }
+    @Test
+    public void canCalculateTotalMarketValueOfBrands(){
+        portfolio.addBrandToList(apparelBrand);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(24105, portfolio.totalMarketValueOfBrands());
+    }
 
 
 

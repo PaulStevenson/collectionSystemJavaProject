@@ -4,7 +4,7 @@ import Interfaces.ITrade;
 
 import java.util.ArrayList;
 
-public class ApparelBrand extends Brand {
+public class ApparelBrand extends Brand implements ITrade {
 
 
     public ApparelBrand(String name, int purchaseCost, int additionalCost, String acquisitionDate,
@@ -13,10 +13,14 @@ public class ApparelBrand extends Brand {
 
     }
 
-
     @Override
     public int calculateTotalPurchaseCost() {
         return this.purchaseCost + this.additionalCost;
+    }
+
+    @Override
+    public int totalMarketValue() {
+        return this.marketValue;
     }
 
 }

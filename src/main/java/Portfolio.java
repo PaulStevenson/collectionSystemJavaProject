@@ -18,7 +18,7 @@ public class Portfolio {
         return this.portfolioList.size();
     }
 
-    public int countAlcoholBrandList(){
+    public int countAlcoholBrandList() {
         return this.alcoholBrandList.size();
     }
 
@@ -26,7 +26,7 @@ public class Portfolio {
         this.portfolioList.add(newBrand);
     }
 
-    public void addAlcoholBrandToList(AlcoholBrand newBrand){
+    public void addAlcoholBrandToList(AlcoholBrand newBrand) {
         this.alcoholBrandList.add(newBrand);
     }
 
@@ -46,6 +46,15 @@ public class Portfolio {
         return total;
     }
 
+    public int totalMarketValueOfBrands() {
+        int totalMarketValue = 0;
+        for (ITrade marketValue : portfolioList) {
+            totalMarketValue += marketValue.totalMarketValue();
+        }
+        return totalMarketValue;
+    }
+}
+
 
 
 
@@ -54,12 +63,7 @@ public class Portfolio {
 //
 //
 
-//    public int totalMarketValueOfBrands() {
-//        int totalMarketValue = 0;
-//        for (ITrade marketValue : portfolioList) {
-//            totalMarketValue += marketValue.calculateMarketValueOfBrands();
-//        }
-//        return totalMarketValue;
+
 //    }
 
 //    public int calculateSpendVsMarketValue() {
@@ -70,7 +74,7 @@ public class Portfolio {
 
 
 
-}
+
 
 //Caluclate total spent on al objects - for loop in brandList
 // Count number items from a subclass   Loop through arraylist

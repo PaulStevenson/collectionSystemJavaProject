@@ -56,26 +56,6 @@ public class ApparelTest {
         assertEquals(6000, apparelBrand.getMarketValue());
     }
 
-//    @Test
-//    public void countSectorlist(){
-//        assertEquals(0, apparelBrand.countApparelList());
-//    }
-//
-//    @Test
-//    public void canAddToSectorList(){
-//        ApparelBrand newBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573);
-//        apparelBrand.addBrandToApparelList(newBrand);
-//        assertEquals(1, apparelBrand.countApparelList());
-//    }
-//
-//    @Test
-//    public void canRemoveFromSectorList(){
-//        ApparelBrand newBrand = new ApparelBrand("Zara", 16529, 15, "2018/06/04",false, 18573);
-//        apparelBrand.addBrandToApparelList(newBrand);
-//        apparelBrand.removeBrandFromApparelList(newBrand);
-//        assertEquals(0, apparelBrand.countApparelList());
-//    }
-
     @Test
     public void canCalculateTotalPurchaseCost(){
         assertEquals(22561, apparelBrand.calculateTotalPurchaseCost());
@@ -91,10 +71,6 @@ public class ApparelTest {
     public void canCalculateSpendVsSellingPrice(){
         assertEquals(2073, apparelBrand.calculateSpendVsMarketValue());
     }
-
-
-
-
 
 
 }
