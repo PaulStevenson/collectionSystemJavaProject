@@ -83,8 +83,9 @@ public class Portfolio {
     }
 
     public double differenceAsPercentage(){
-        return differenceBetweenValueAndSpend() / TotalSpendPlusTotalMarketValue() * 100;
-
+//        return (totalMarketValueOfBrands() / 100) * differenceBetweenValueAndSpend():
+        
+        return (differenceBetweenValueAndSpend()/100) * totalMarketValueOfBrands();
     }
 
 //    A/B * 100 = %

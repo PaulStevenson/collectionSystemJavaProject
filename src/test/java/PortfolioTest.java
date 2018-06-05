@@ -111,11 +111,12 @@ public class PortfolioTest {
         assertEquals(46191, portfolio.TotalSpendPlusTotalMarketValue());
     }
 
-//    @Test
-//    public void calculateDifferenceAsPercentage(){
-//        portfolio.addBrandToList(apparelBrand);
-//        portfolio.addBrandToList(alcoholBrand);
-//    }
+    @Test
+    public void calculateDifferenceAsPercentage(){
+        portfolio.addBrandToList(apparelBrand);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(4.37, portfolio.differenceAsPercentage(),0.01);
+    }
 
 
 }
