@@ -1,36 +1,51 @@
 import Interfaces.ITrade;
+import Sectors.AlcoholBrand;
+import Sectors.Brand;
 
 import java.util.ArrayList;
 
 public class Portfolio {
 
-    private ArrayList<ITrade> brandList;
-    private ArrayList<ITrade> alcoholBrandList;
+    private ArrayList<ITrade> portfolioList;
+    private ArrayList<AlcoholBrand> alcoholBrandList;
 
     public Portfolio() {
-        this.brandList = new ArrayList<ITrade>();
-        this.alcoholBrandList = new ArrayList<ITrade>();
+        this.portfolioList = new ArrayList<ITrade>();
+        this.alcoholBrandList = new ArrayList<AlcoholBrand>();
     }
 
     public int countBrandList() {
-        return this.brandList.size();
+        return this.portfolioList.size();
+    }
+
+    public int countAlcoholBrandList(){
+        return this.alcoholBrandList.size();
     }
 
     public void addBrandToList(ITrade newBrand) {
-        this.brandList.add(newBrand);
+        this.portfolioList.add(newBrand);
     }
 
-    public void removeBrandFrombrandList(ITrade newBrand) {
-        this.brandList.remove(newBrand);
+    public void addAlcoholBrandToList(AlcoholBrand newBrand){
+        this.alcoholBrandList.add(newBrand);
+    }
+
+    public void removeBrandFrombrandList(Brand newAlcohol) {
+        this.portfolioList.remove(newAlcohol);
+    }
+
+    public void removeBrandFromAlcoholBrandList(AlcoholBrand newBrand) {
+        this.alcoholBrandList.remove(newBrand);
     }
 
     public int totalAmountSpentonBrands() {
         int total = 0;
-        for (ITrade newBrand : brandList) {
+        for (ITrade newBrand : portfolioList) {
             total += newBrand.calculateTotalPurchaseCost();
         }
         return total;
     }
+
 
 
 
@@ -39,13 +54,13 @@ public class Portfolio {
 //
 //
 
-    public int totalMarketValueOfBrands() {
-        int totalMarketValue = 0;
-        for (ITrade marketValue : brandList) {
-            totalMarketValue += marketValue.calculateMarketValueOfBrands();
-        }
-        return totalMarketValue;
-    }
+//    public int totalMarketValueOfBrands() {
+//        int totalMarketValue = 0;
+//        for (ITrade marketValue : portfolioList) {
+//            totalMarketValue += marketValue.calculateMarketValueOfBrands();
+//        }
+//        return totalMarketValue;
+//    }
 
 //    public int calculateSpendVsMarketValue() {
 //        return calculateTotalPurchaseCost() - this.marketValue;
