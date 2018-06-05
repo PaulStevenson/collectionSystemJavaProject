@@ -3,16 +3,21 @@ import Sectors.ApparelBrand;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class AlcoholTest {
 
     AlcoholBrand alcoholBrand;
+    ArrayList sectorList2;
+
 
     @Before
     public void before() {
         alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04", true, 5532);
+        sectorList2 = new ArrayList();
     }
 
     @Test
@@ -53,25 +58,25 @@ public class AlcoholTest {
         assertEquals(6000, alcoholBrand.getMarketValue());
     }
 
-    @Test
-    public void countSectorlist(){
-        assertEquals(0, alcoholBrand.countSectorList());
-    }
-
-    @Test
-    public void canAddToSectorList(){
-        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
-        alcoholBrand.addBrandToList(newBrand);
-        assertEquals(1, alcoholBrand.countSectorList());
-    }
-
-    @Test
-    public void canRemoveFromSectorList(){
-        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
-        alcoholBrand.addBrandToList(newBrand);
-        alcoholBrand.removeBrandFromList(newBrand);
-        assertEquals(0, alcoholBrand.countSectorList());
-    }
+//    @Test
+//    public void countSectorList(){
+//        assertEquals(0, alcoholBrand.countSectorList());
+//    }
+//
+//    @Test
+//    public void canAddToSectorList(){
+//        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+//        alcoholBrand.addBrandToList(newBrand);
+//        assertEquals(1, alcoholBrand.countSectorList());
+//    }
+//
+//    @Test
+//    public void canRemoveFromSectorList(){
+//        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+//        alcoholBrand.addBrandToList(newBrand);
+//        alcoholBrand.removeBrandFromList(newBrand);
+//        assertEquals(0, alcoholBrand.countSectorList());
+//    }
 
     @Test
     public void canCalculateTotalPurchaseCost(){
@@ -88,6 +93,13 @@ public class AlcoholTest {
     public void canCalculateSpendVsSellingPrice(){
         assertEquals(10, alcoholBrand.calculateSpendVsMarketValue());
     }
+
+//    @Test
+//    public void canCalculateTotalMarketValue(){
+//        AlcoholBrand newBrand = new AlcoholBrand("Budwieser", 15375, 20, "2018/06/04",false, 15375);
+//        alcoholBrand.addBrandToList(newBrand);
+//        assertEquals(15375, alcoholBrand.calculateMarketValueOfBrands());
+//    }
 
 
 

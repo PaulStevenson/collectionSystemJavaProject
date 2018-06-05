@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class Portfolio {
 
     private ArrayList<ITrade> brandList;
+    private ArrayList<ITrade> alcoholBrandList;
 
     public Portfolio() {
         this.brandList = new ArrayList<ITrade>();
+        this.alcoholBrandList = new ArrayList<ITrade>();
     }
 
     public int countBrandList() {
@@ -31,20 +33,25 @@ public class Portfolio {
     }
 
 
+
 //CALCULATE TOTAL MARKET VALUE OF BRANDS, THEN DIFFERENCE BETWEEN SPEND AND VALUE!!!!!!!!!!!!!!
 
 //
+//
+
+    public int totalMarketValueOfBrands() {
+        int totalMarketValue = 0;
+        for (ITrade marketValue : brandList) {
+            totalMarketValue += marketValue.calculateMarketValueOfBrands();
+        }
+        return totalMarketValue;
+    }
+
 //    public int calculateSpendVsMarketValue() {
 //        return calculateTotalPurchaseCost() - this.marketValue;
 //    }
 
-//    public int totalMarketValueOfBrands() {
-//        int totalMarketValue = 0;
-//        for (ITrade marketValue : brandList) {
-//            totalMarketValue += marketValue();
-//        }
-//        return totalMarketValue;
-//    }
+
 
 
 

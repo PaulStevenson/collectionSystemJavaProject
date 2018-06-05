@@ -6,24 +6,22 @@ import java.util.ArrayList;
 
 public class AlcoholBrand extends Brand {
 
-    private ArrayList<AlcoholBrand> sectorlist;
+    public ArrayList<AlcoholBrand> sectorList1;
 
     public AlcoholBrand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue) {
         super(name, purchaseCost, additionalCost, acquisitionDate, favourite, marketValue);
-        this.sectorlist = new ArrayList<>();
     }
 
     public int countSectorList() {
-        return this.sectorlist.size();
+        return this.sectorList1.size();
     }
 
     public void addBrandToList(AlcoholBrand newBrand) {
-        this.sectorlist.add(newBrand);
-        System.out.println(sectorlist.toString());
+        this.sectorList1.add(newBrand);
     }
 
     public void removeBrandFromList(AlcoholBrand newBrand) {
-        this.sectorlist.remove(newBrand);
+        this.sectorList1.remove(newBrand);
     }
 
     @Override
@@ -31,7 +29,14 @@ public class AlcoholBrand extends Brand {
         return this.purchaseCost + this.additionalCost;
     }
 
-
+    @Override
+    public int calculateMarketValueOfBrands() {
+        int totalMarketValue = 0;
+        for (AlcoholBrand marketValue : sectorList1){
+            totalMarketValue += marketValue.calculateMarketValueOfBrands();
+        }
+        return totalMarketValue;
+    }
 
 
 
