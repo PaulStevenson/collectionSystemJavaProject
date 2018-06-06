@@ -101,13 +101,11 @@ public class PortfolioTest {
 
     @Test
     public void canMakeABrandSellableTrue(){
-
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(true, portfolio.changeSellableStatusIf());
     }
 
-    @Test
-    public void canMakeABrandSellableFalse(){
-
-    }
 
 
 //    All Brands

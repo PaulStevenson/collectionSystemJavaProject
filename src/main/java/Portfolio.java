@@ -73,6 +73,21 @@ public class Portfolio {
         return percentage;
     }
 
+    public boolean changeSellableStatusIf() {
+
+        if (percentageChangeBetweenValueAndSpend() >= 5) {
+             return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
+
+
+
+
 
     //    Totals
     public int totalAmountSpentonBrands() {
@@ -98,6 +113,8 @@ public class Portfolio {
     public double percentageChangeBetweenValueAndSpendofAll() {
         return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands()) * 100;
     }
+
+
 }
 
 
