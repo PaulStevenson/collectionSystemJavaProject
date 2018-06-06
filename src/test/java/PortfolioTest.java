@@ -85,15 +85,29 @@ public class PortfolioTest {
 
 //    Single Brand
 
-//    @Test
-//    public void canCalculateDifferenceBetweenMarketValueAndTotalSpend(){
-//        assertEquals(-10, portfolio.calculateDifferenceBetweenMarketValueAndTotalSpend());
-//    }
+    @Test
+    public void canCalculateDifferenceBetweenMarketValueAndTotalSpend(){
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(8, portfolio.calculateDifferenceBetweenMarketValueAndTotalSpend());
+    }
 //
-//    @Test
-//    public void canGetDifferenceasPercentage() {
-//        assertEquals(-0.18, portfolio.percentageChangeBetweenValueAndSpend(), 0.01);
-//    }
+    @Test
+    public void canGetDifferenceasPercentage() {
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
+        portfolio.addBrandToList(alcoholBrand);
+        assertEquals(66.66, portfolio.percentageChangeBetweenValueAndSpend(), 0.01);
+    }
+
+    @Test
+    public void canMakeABrandSellableTrue(){
+
+    }
+
+    @Test
+    public void canMakeABrandSellableFalse(){
+
+    }
 
 
 //    All Brands

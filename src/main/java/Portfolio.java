@@ -31,7 +31,6 @@ public class Portfolio {
     }
 
 
-
     public void addBrandToList(ITrade newBrand) {
         this.portfolioList.add(newBrand);
     }
@@ -57,6 +56,25 @@ public class Portfolio {
         this.apparelBrandList.remove(newBrand);
     }
 
+    //    Singular
+    public int calculateDifferenceBetweenMarketValueAndTotalSpend() {
+        int difference = 0;
+        for (ITrade brand : portfolioList) {
+            difference = brand.calculateDifferenceBetweenMarketValueAndTotalSpend();
+        }
+            return difference;
+        }
+
+    public double percentageChangeBetweenValueAndSpend() {
+        double percentage = 0;
+        for (ITrade brand : portfolioList){
+            percentage = brand.percentageChangeBetweenValueAndSpend();
+        }
+        return percentage;
+    }
+
+
+    //    Totals
     public int totalAmountSpentonBrands() {
         int total = 0;
         for (ITrade newBrand : portfolioList) {
@@ -77,11 +95,13 @@ public class Portfolio {
         return totalMarketValueOfBrands() - totalAmountSpentonBrands();
     }
 
-    public double percentageChangeBetweenValueAndSpendofAll(){
-        return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands())*100;
+    public double percentageChangeBetweenValueAndSpendofAll() {
+        return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands()) * 100;
     }
-
-
 }
+
+
+
+
 
 
