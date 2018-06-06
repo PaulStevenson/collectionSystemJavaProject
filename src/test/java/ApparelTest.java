@@ -11,9 +11,9 @@ public class ApparelTest {
 
     @Before
     public void before() {
-        apparelBrand = new ApparelBrand("H&M", 22536, 25, "2018/06/04", false, 20488);
+        apparelBrand = new ApparelBrand("H&M", 22536, 25, "2018/06/04", false, 20488, false);
 
-        apparelBrand2 = new ApparelBrand("Paul", 22536, 25, "2018/06/04", false, 200);
+        apparelBrand2 = new ApparelBrand("Paul", 22536, 25, "2018/06/04", false, 200, false);
     }
 
 
@@ -50,9 +50,21 @@ public class ApparelTest {
 
     @Test
     public void setMarketValue() {
-        apparelBrand = new ApparelBrand("H&M", 22536, 25, "2018/06/04", false, 20488);
+        apparelBrand = new ApparelBrand("H&M", 22536, 25, "2018/06/04", false, 20488, false);
         apparelBrand.setMarketValue(6000);
         assertEquals(6000, apparelBrand.getMarketValue());
+    }
+
+    @Test
+    public void isSellable(){
+        assertEquals(false, apparelBrand.getSellable());
+    }
+
+    @Test
+    public void setSellable(){
+        apparelBrand.setSellable(true);
+        assertEquals(true, apparelBrand.getSellable());
+
     }
 
     @Test

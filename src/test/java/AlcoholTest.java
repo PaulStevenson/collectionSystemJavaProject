@@ -13,7 +13,7 @@ public class AlcoholTest {
 
     @Before
     public void before() {
-        alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04", true, 5532);
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04", true, 5532, false);
     }
 
     @Test
@@ -48,8 +48,20 @@ public class AlcoholTest {
     }
 
     @Test
+    public void isSellable(){
+        assertEquals(false, alcoholBrand.getSellable());
+    }
+
+    @Test
+    public void setSellable(){
+        alcoholBrand.setSellable(true);
+        assertEquals(true, alcoholBrand.getSellable());
+
+    }
+
+    @Test
     public void setMarketValue() {
-        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04",true, 5532);
+        AlcoholBrand alcoholBrand = new AlcoholBrand("Jack Daniel's", 5522, 20, "2018/06/04",true, 5532, false);
         alcoholBrand.setMarketValue(6000);
         assertEquals(6000, alcoholBrand.getMarketValue());
     }

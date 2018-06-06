@@ -45,7 +45,6 @@ public class Portfolio {
     }
 
 
-
     public void removeBrandFrombrandList(Brand newAlcohol) {
         this.portfolioList.remove(newAlcohol);
     }
@@ -74,12 +73,12 @@ public class Portfolio {
         return totalMarketValue;
     }
 
-    public int differenceBetweenValueAndSpend() {
+    public int differenceBetweenValueAndSpendOfAll() {
         return totalMarketValueOfBrands() - totalAmountSpentonBrands();
     }
 
-    public double percentageChangeBetweenValueAndSpend(){
-        return ((double) differenceBetweenValueAndSpend() / (double) totalAmountSpentonBrands())*100;
+    public double percentageChangeBetweenValueAndSpendofAll(){
+        return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands())*100;
     }
 
 

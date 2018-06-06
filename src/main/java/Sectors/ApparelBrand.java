@@ -6,8 +6,8 @@ public class ApparelBrand extends Brand implements ITrade {
 
 
     public ApparelBrand(String name, int purchaseCost, int additionalCost, String acquisitionDate,
-                        boolean favourite, int marketValue) {
-        super(name, purchaseCost, additionalCost, acquisitionDate, favourite, marketValue);
+                        boolean favourite, int marketValue, boolean sellable) {
+        super(name, purchaseCost, additionalCost, acquisitionDate, favourite, marketValue, sellable);
 
     }
 

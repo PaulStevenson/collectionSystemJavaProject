@@ -11,15 +11,17 @@ public abstract class Brand implements ITrade {
     private String acquisitionDate;
     private boolean favourite;
     protected int marketValue;
+    protected boolean sellable;
 
 
-    public Brand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue) {
+    public Brand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue, boolean sellable) {
         this.name = name;
         this.purchaseCost = purchaseCost;
         this.additionalCost = additionalCost;
         this.acquisitionDate = acquisitionDate;
         this.favourite = favourite;
         this.marketValue = marketValue;
+        this.sellable = sellable;
     }
 
     public String getName() {
@@ -58,6 +60,14 @@ public abstract class Brand implements ITrade {
 
     public void setAcquisitionDate(String acquisitionDate) {
         this.acquisitionDate = acquisitionDate;
+    }
+
+    public boolean getSellable(){
+        return this.sellable;
+    }
+
+    public void setSellable(boolean sellable){
+        this.sellable = sellable;
     }
 
 
