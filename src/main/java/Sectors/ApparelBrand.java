@@ -21,4 +21,15 @@ public class ApparelBrand extends Brand implements ITrade {
         return this.marketValue;
     }
 
+    @Override
+    public int calculateDifferenceBetweenMarketValueAndTotalSpend() {
+            return this.marketValue - calculateTotalPurchaseCost();
+    }
+
+    @Override
+    public double percentageChangeBetweenValueAndSpend() {
+        return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend() / (double) calculateTotalPurchaseCost())*100;
+    }
+
+
 }

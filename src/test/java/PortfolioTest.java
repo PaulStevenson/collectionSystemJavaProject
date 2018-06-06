@@ -104,19 +104,15 @@ public class PortfolioTest {
         assertEquals(2019, portfolio.differenceBetweenValueAndSpend());
     }
 
+//    Percentage
     @Test
-    public void canAddTotalSpendWithTotalMarketValue(){
+    public void canGetDifferenceasPercentage(){
         portfolio.addBrandToList(apparelBrand);
         portfolio.addBrandToList(alcoholBrand);
-        assertEquals(46191, portfolio.TotalSpendPlusTotalMarketValue());
+        assertEquals(9.14, portfolio.percentageChangeBetweenValueAndSpend(), 0.01);
     }
 
-    @Test
-    public void calculateDifferenceAsPercentage(){
-        portfolio.addBrandToList(apparelBrand);
-        portfolio.addBrandToList(alcoholBrand);
-        assertEquals(4.37, portfolio.differenceAsPercentage(),0.01);
-    }
+
 
 
 }

@@ -78,17 +78,10 @@ public class Portfolio {
         return totalMarketValueOfBrands() - totalAmountSpentonBrands();
     }
 
-    public int TotalSpendPlusTotalMarketValue(){
-        return totalMarketValueOfBrands() + totalAmountSpentonBrands();
+    public double percentageChangeBetweenValueAndSpend(){
+        return ((double) differenceBetweenValueAndSpend() / (double) totalAmountSpentonBrands())*100;
     }
 
-    public double differenceAsPercentage(){
-//        return (totalMarketValueOfBrands() / 100) * differenceBetweenValueAndSpend():
-        
-        return (differenceBetweenValueAndSpend()/100) * totalMarketValueOfBrands();
-    }
-
-//    A/B * 100 = %
 
 }
 

@@ -67,8 +67,13 @@ public class ApparelTest {
     }
 
     @Test
-    public void canCalculateSpendVsSellingPrice(){
-        assertEquals(2073, apparelBrand.calculateSpendVsMarketValue());
+    public void canCalculateDifferenceBetweenMarketValueAndTotalSpend(){
+        assertEquals(-2073, apparelBrand.calculateDifferenceBetweenMarketValueAndTotalSpend());
+    }
+
+    @Test
+    public void canGetDifferenceasPercentage(){
+        assertEquals(-9.18, apparelBrand.percentageChangeBetweenValueAndSpend(), 0.01);
     }
 
 

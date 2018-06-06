@@ -11,10 +11,9 @@ public abstract class Brand implements ITrade {
     private String acquisitionDate;
     private boolean favourite;
     protected int marketValue;
-    
 
 
-    public Brand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue){
+    public Brand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue) {
         this.name = name;
         this.purchaseCost = purchaseCost;
         this.additionalCost = additionalCost;
@@ -59,10 +58,6 @@ public abstract class Brand implements ITrade {
 
     public void setAcquisitionDate(String acquisitionDate) {
         this.acquisitionDate = acquisitionDate;
-    }
-
-    public int calculateSpendVsMarketValue() {
-        return calculateTotalPurchaseCost() - this.marketValue;
     }
 
 
