@@ -2,7 +2,7 @@ package Sectors;
 
 import Interfaces.ITrade;
 
-public class AlcoholBrand extends Brand implements ITrade{
+public class AlcoholBrand extends Brand implements ITrade {
 
 
     public AlcoholBrand(String name, int purchaseCost, int additionalCost, String acquisitionDate, boolean favourite, int marketValue, boolean sellable) {
@@ -26,8 +26,21 @@ public class AlcoholBrand extends Brand implements ITrade{
 
     @Override
     public double percentageChangeBetweenValueAndSpend() {
-        return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend() / (double) calculateTotalPurchaseCost())*100;
+        return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend() / (double) calculateTotalPurchaseCost()) * 100;
+    }
+
+
+    public void checkIfSellable() {
+        if (percentageChangeBetweenValueAndSpend() >= 5) {
+
+            this.setSellable(true);
+        }
+        else {
+            this.setSellable(false);
+        }
+
     }
 
 
 }
+

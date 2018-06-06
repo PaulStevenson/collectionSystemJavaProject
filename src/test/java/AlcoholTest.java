@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class AlcoholTest {
@@ -87,6 +88,14 @@ public class AlcoholTest {
         assertEquals(-0.18, alcoholBrand.percentageChangeBetweenValueAndSpend(), 0.01);
     }
 
+    @Test
+    public void canSetAsSellable(){
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
+        alcoholBrand.checkIfSellable();
+        assertEquals(true, alcoholBrand.getSellable());
+    }
+
+//    @Test void above is false
 
 
 

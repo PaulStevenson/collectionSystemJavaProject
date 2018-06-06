@@ -63,7 +63,7 @@ public class Portfolio {
             difference = brand.calculateDifferenceBetweenMarketValueAndTotalSpend();
         }
             return difference;
-        }
+    }
 
     public double percentageChangeBetweenValueAndSpend() {
         double percentage = 0;
@@ -73,21 +73,15 @@ public class Portfolio {
         return percentage;
     }
 
-    public boolean changeSellableStatusIf() {
-
-        if (percentageChangeBetweenValueAndSpend() >= 5) {
-             return true;
-        }
-        else {
-            return false;
-        }
-    }
-
-
-
-
-
-
+//    public boolean checkIfSellable() {
+//
+//        if (percentageChangeBetweenValueAndSpend() >= 5) {
+//             return true;
+//        }
+//        else {
+//            return false;
+//        }
+//    }
 
     //    Totals
     public int totalAmountSpentonBrands() {
@@ -113,6 +107,7 @@ public class Portfolio {
     public double percentageChangeBetweenValueAndSpendofAll() {
         return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands()) * 100;
     }
+
 
 
 }
