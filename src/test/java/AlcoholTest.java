@@ -89,13 +89,18 @@ public class AlcoholTest {
     }
 
     @Test
-    public void canSetAsSellable(){
+    public void canSetAsSellableTrue(){
         alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
         alcoholBrand.checkIfSellable();
         assertEquals(true, alcoholBrand.getSellable());
     }
 
-//    @Test void above is false
+    @Test
+    public void canSetAsSellableFalse(){
+        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 2, false);
+        alcoholBrand.checkIfSellable();
+        assertEquals(false, alcoholBrand.getSellable());
+    }
 
 
 
