@@ -83,36 +83,13 @@ public class PortfolioTest {
         assertEquals(0, portfolio.countApparelBrandList());
     }
 
-//    Single Brand
-
-    @Test
-    public void canCalculateDifferenceBetweenMarketValueAndTotalSpend(){
-        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
-        portfolio.addBrandToList(alcoholBrand);
-        assertEquals(8, portfolio.calculateDifferenceBetweenMarketValueAndTotalSpend());
-    }
-
-    @Test
-    public void canGetDifferenceAsPercentage() {
-        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
-        portfolio.addBrandToList(alcoholBrand);
-        assertEquals(66.66, portfolio.percentageChangeBetweenValueAndSpend(), 0.01);
-    }
-
-//    @Test
-//    public void canCheckIfSellable(){
-//        alcoholBrand = new AlcoholBrand("Jack Daniel's", 10, 2, "2018/06/04", true, 20, false);
-//        portfolio.addBrandToList(alcoholBrand);
-//        assertEquals(true, portfolio.checkIfSellable());
-//    }
-
 
 //    All Brands
     @Test
     public void canCalculateTotalSpendOnBrands(){
         portfolio.addBrandToList(apparelBrand);
         portfolio.addBrandToList(alcoholBrand);
-        assertEquals(22086, portfolio.totalAmountSpentonBrands());
+        assertEquals(22086, portfolio.totalAmountSpentOnBrands());
     }
 
     @Test
@@ -126,14 +103,14 @@ public class PortfolioTest {
     public void canGetDifferenceBetweenMarketValueAndTotalSpend(){
         portfolio.addBrandToList(apparelBrand);
         portfolio.addBrandToList(alcoholBrand);
-        assertEquals(2019, portfolio.differenceBetweenValueAndSpendOfAll());
+        assertEquals(2019, portfolio.differenceBetweenMarketValueAndSpendOfAll());
     }
 
     @Test
-    public void canGetDifferenceasPercentageOfAll(){
+    public void canGetDifferenceAsPercentageOfAll(){
         portfolio.addBrandToList(apparelBrand);
         portfolio.addBrandToList(alcoholBrand);
-        assertEquals(9.14, portfolio.percentageChangeBetweenValueAndSpendofAll(), 0.01);
+        assertEquals(9.14, portfolio.percentageChangeBetweenMarketValueAndSpendofAll(), 0.01);
     }
 
 

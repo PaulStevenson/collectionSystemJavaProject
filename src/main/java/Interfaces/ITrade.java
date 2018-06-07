@@ -8,6 +8,8 @@ public interface ITrade {
     int calculateDifferenceBetweenMarketValueAndTotalSpend();
 
     double percentageChangeBetweenValueAndSpend();
+
+    void checkIfSellable();
 }
 
 

@@ -2,7 +2,6 @@ import Interfaces.ITrade;
 import Sectors.AlcoholBrand;
 import Sectors.ApparelBrand;
 import Sectors.Brand;
-import javafx.util.converter.PercentageStringConverter;
 
 import java.util.ArrayList;
 
@@ -56,35 +55,8 @@ public class Portfolio {
         this.apparelBrandList.remove(newBrand);
     }
 
-    //    Singular
-    public int calculateDifferenceBetweenMarketValueAndTotalSpend() {
-        int difference = 0;
-        for (ITrade brand : portfolioList) {
-            difference = brand.calculateDifferenceBetweenMarketValueAndTotalSpend();
-        }
-            return difference;
-    }
-
-    public double percentageChangeBetweenValueAndSpend() {
-        double percentage = 0;
-        for (ITrade brand : portfolioList){
-            percentage = brand.percentageChangeBetweenValueAndSpend();
-        }
-        return percentage;
-    }
-
-//    public boolean checkIfSellable() {
-//
-//        if (percentageChangeBetweenValueAndSpend() >= 5) {
-//             return true;
-//        }
-//        else {
-//            return false;
-//        }
-//    }
-
     //    Totals
-    public int totalAmountSpentonBrands() {
+    public int totalAmountSpentOnBrands() {
         int total = 0;
         for (ITrade newBrand : portfolioList) {
             total += newBrand.calculateTotalPurchaseCost();
@@ -100,15 +72,13 @@ public class Portfolio {
         return totalMarketValue;
     }
 
-    public int differenceBetweenValueAndSpendOfAll() {
-        return totalMarketValueOfBrands() - totalAmountSpentonBrands();
+    public int differenceBetweenMarketValueAndSpendOfAll() {
+        return totalMarketValueOfBrands() - totalAmountSpentOnBrands();
     }
 
-    public double percentageChangeBetweenValueAndSpendofAll() {
-        return ((double) differenceBetweenValueAndSpendOfAll() / (double) totalAmountSpentonBrands()) * 100;
+    public double percentageChangeBetweenMarketValueAndSpendofAll() {
+        return ((double) differenceBetweenMarketValueAndSpendOfAll() / (double) totalAmountSpentOnBrands()) * 100;
     }
-
-
 
 }
 

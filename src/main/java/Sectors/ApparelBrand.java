@@ -28,9 +28,11 @@ public class ApparelBrand extends Brand implements ITrade {
 
     @Override
     public double percentageChangeBetweenValueAndSpend() {
-        return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend() / (double) calculateTotalPurchaseCost())*100;
+        return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend()
+                / (double) calculateTotalPurchaseCost())*100;
     }
 
+    @Override
     public void checkIfSellable() {
         if (percentageChangeBetweenValueAndSpend() >= 5) {
 
