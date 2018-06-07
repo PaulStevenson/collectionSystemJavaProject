@@ -31,5 +31,17 @@ public class ApparelBrand extends Brand implements ITrade {
         return ((double) calculateDifferenceBetweenMarketValueAndTotalSpend() / (double) calculateTotalPurchaseCost())*100;
     }
 
+    public void checkIfSellable() {
+        if (percentageChangeBetweenValueAndSpend() >= 5) {
+
+            this.setSellable(true);
+        }
+        else {
+            this.setSellable(false);
+        }
+
+    }
+
+
 
 }

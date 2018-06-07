@@ -88,6 +88,20 @@ public class ApparelTest {
         assertEquals(-9.18, apparelBrand.percentageChangeBetweenValueAndSpend(), 0.01);
     }
 
+    @Test
+    public void canSetAsSellableTrue(){
+        apparelBrand = new ApparelBrand("H&M", 10, 2, "2018/06/04", false, 20, false);
+        apparelBrand.checkIfSellable();
+        assertEquals(true, apparelBrand.getSellable());
+    }
+
+    @Test
+    public void canSetAsSellableFalse(){
+        apparelBrand = new ApparelBrand("H&M", 10, 2, "2018/06/04", false, 20, false);
+        apparelBrand.checkIfSellable();
+        assertEquals(true, apparelBrand.getSellable());
+    }
+
 
 }
 
